@@ -19,7 +19,8 @@ public class UsuarioProveedorDTO {
         super();
     }
 
-    public UsuarioProveedorDTO( int codigo, String nombre, String apellido, Date fechaRegistro, String telefono, String direccion, TipoIdentificacionDTO tipoIdentificacion) {
+
+    public UsuarioProveedorDTO(String nombre, int codigo, String apellido, String direccion, Date fechaRegistro, String telefono, TipoIdentificacionDTO tipoIdentificacion) {
         setNombre(nombre);
         setCodigo(codigo);
         setApellido(apellido);
@@ -35,6 +36,7 @@ public class UsuarioProveedorDTO {
     }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 
@@ -81,4 +83,9 @@ public class UsuarioProveedorDTO {
     public String getDireccion(){
         return StringUtils.defaultString((direccion));
     }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
 }

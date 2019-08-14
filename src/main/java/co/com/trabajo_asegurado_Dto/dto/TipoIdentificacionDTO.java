@@ -26,4 +26,8 @@ public class TipoIdentificacionDTO {
     public String getNombre() {
         return StringUtils.defaultString(nombre);
     }
+
+    public int getCodigo() {
+        return codigo;
+    }
 }

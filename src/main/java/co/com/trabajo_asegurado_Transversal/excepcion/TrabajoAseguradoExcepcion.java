@@ -44,4 +44,16 @@ public class TrabajoAseguradoExcepcion extends RuntimeException {
     public void setCapa(CapaEnum capa) {
         this.capa = ObjectUtils.defaultIfNull(capa, CapaEnum.TRANSVERSAL);
     }
+
+    public Throwable getExcepcionRaiz() {
+        return excepcionRaiz;
+    }
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public CapaEnum getCapa() {
+        return capa;
+    }
 }
